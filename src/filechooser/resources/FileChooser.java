@@ -306,7 +306,7 @@ public class FileChooser extends javax.swing.JFrame {
                      }
                      if(typedefOn)
                      {
-                         if(line.matches("^.*\\w+.*$"))
+                         if(line.matches("^.*[\\{\\}\\w]+.*$"))
                          {
                              typedefText += line + "\n";
                          }

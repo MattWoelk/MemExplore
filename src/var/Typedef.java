@@ -43,7 +43,7 @@ public class Typedef {
         }
     }
     
-    
+   
     
     private void parse(String t)
     {
@@ -120,4 +120,18 @@ public class Typedef {
     /*
      * Need a function to compare equality?
      */
+    
+    private void parseForStructs()
+    {
+        /*
+         * Structs can be multi-line or single line: struct {var 1; var 2;} structName;
+         */
+        String lines[] = text.split("\n");
+        boolean structOn = false;
+        int numLeftBraces = 0;
+        for(int i = 0; i < lines.length; i++)
+        {
+            
+        }
+    }
 }
